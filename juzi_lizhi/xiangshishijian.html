@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="description" content="ZhaoZheng的技术日志"/>
+
+
+
+
+
+
+
+
+  <link rel="alternate" href="/default" title="ZhaoZheng的技术日志">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
+
+
+
+<link rel="canonical" href="http://yoursite.com/juzi_lizhi/xiangshishijian.html"/>
+
+
+<meta name="description" content="橘子先生&amp;荔枝姑娘已相识时间                    window.onload = function(){         calc_time();         setInterval(&quot;calc_time()&quot;, 1000);     };     function calc_time()     {         //相识时间         var dat">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ZhaoZheng的技术日志">
+<meta property="og:url" content="http://yoursite.com/juzi_lizhi/xiangshishijian.html">
+<meta property="og:site_name" content="ZhaoZheng的技术日志">
+<meta property="og:description" content="橘子先生&amp;荔枝姑娘已相识时间                    window.onload = function(){         calc_time();         setInterval(&quot;calc_time()&quot;, 1000);     };     function calc_time()     {         //相识时间         var dat">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="http://yoursite.com/juzi_lizhi/bg.jpg">
+<meta property="og:updated_time" content="2018-10-06T12:12:14.183Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ZhaoZheng的技术日志">
+<meta name="twitter:description" content="橘子先生&amp;荔枝姑娘已相识时间                    window.onload = function(){         calc_time();         setInterval(&quot;calc_time()&quot;, 1000);     };     function calc_time()     {         //相识时间         var dat">
+<meta name="twitter:image" content="http://yoursite.com/juzi_lizhi/bg.jpg">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+  
+
+
+
+    <title>  - ZhaoZheng的技术日志 </title>
+  </head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">ZhaoZheng的技术日志</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/">
+                            
+                            
+                                首页
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                归档
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                关于
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary">
+        <article class="post">
+            <header class="post-header">
+                <h1 class="post-title">
+                    
+                </h1>
+            </header>
+            <div class="post-content">
+                <!DOCTYPE html>
+<html>
+<head>
+    <title>橘子先生&荔枝姑娘已相识时间</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    window.onload = function(){
+        calc_time();
+        setInterval("calc_time()", 1000);
+    };
+    function calc_time()
+    {
+        //相识时间
+        var date1 = new Date('2018-03-18 20:00');
+        var time1 = date1.getTime();
+        //当前时间
+        var date2 = new Date();
+        var time2 = date2.getTime();
+        //计算间隔时间
+        var interval = time2 - time1;
+        var days = parseInt(interval/(1000*3600*24));
+        var hours = parseInt((interval-days*1000*3600*24)/(1000*3600));
+        if (hours < 10)
+        {
+            hours = '0' + hours;
+        }
+        var minutes = parseInt((interval-days*1000*3600*24-hours*1000*3600)/(1000*60));
+        if (minutes < 10)
+        {
+            minutes = '0' + minutes;
+        }
+        var seconds = parseInt((interval-days*1000*3600*24-hours*1000*3600-minutes*1000*60)/1000);
+        if (seconds < 10)
+        {
+            seconds = '0' + seconds;
+        }
+        var str = days+'天'+hours+'小时'+minutes+'分'+seconds+'秒';
+        
+        var obj = document.getElementById('time');
+        obj.innerHTML = str;
+    }
+    </script>
+    <style>
+    .header{margin:30px 0;text-align:center;font-size:30px}
+    .content{text-align:center}
+    .content_img{width:90%}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="time_title">橘子先生&荔枝姑娘已相识</div>
+        <div id="time" class="time_str">--天--小时--分--秒</div>
+    </div>
+    <div class="content">
+        <img class="content_img" src="./bg.jpg">
+    </div>
+</body>
+</html>
+            </div>
+        </article>
+    </div>
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    2018
+    <span class="footer-author">ZhaoZheng.me</span>
+    <span class="power-by">
+        由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a> 强力驱动
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
+</html>
